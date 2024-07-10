@@ -13,7 +13,7 @@
 
  :root {
      --fs-16: 16px;
-     --fs-44: 44px;
+     --fs-44: 42px;
      --fs-24: 24px;
      --fs-91: 91px;
      --fs-24: 24px;
@@ -100,6 +100,10 @@
      cursor: pointer;
  }
 
+ .tpp {
+     top: -51px;
+ }
+
  .podcasts-text {
      font-size: var(--fs-44);
      font-weight: 900;
@@ -109,15 +113,53 @@
      background: linear-gradient(99.76deg, #00B9FF 34.35%, #6F69F2 64.82%, #10B6D0 88.28%);
      background-clip: text;
  }
- .mt-70{
-    margin-top: 70px;
+
+ .dive-text {
+     font-size: var(--fs-16);
+     font-weight: 400;
+     line-height: 24px;
+     color: var(--color-gray);
  }
- .main-pera{
-        font-size: var(--fs-16);
-        font-weight: 400;
-        line-height: 24px;
-        color: var(--color-gray);
-        max-width: 593px;
+
+ .view-link {
+     font-size: var(--fs-16);
+     font-weight: 600;
+     line-height: 24px;
+     color: transparent;
+     --webkit-background-clip: text;
+     background: linear-gradient(101.64deg, #00B9FF 7.34%, #6F69F2 44.47%, #10B6D0 73.06%);
+     background-clip: text;
+ }
+
+ .discover {
+     font-size: var(--fs-24);
+     font-weight: 500;
+     line-height: 33.6px;
+     color: var(--color-black);
+ }
+
+ .nmber {
+     font-size: var(--fs-91);
+     font-weight: 700;
+     line-height: 100.9px;
+     background: linear-gradient(180deg, #6F69F2 0%, rgba(64, 61, 140, 0) 100%);
+     color: transparent;
+     --webkit-background-clip: text;
+     background-clip: text;
+     opacity: 10%;
+
+ }
+
+ .mt-70 {
+     margin-top: 70px;
+ }
+
+ .main-pera {
+     font-size: var(--fs-16);
+     font-weight: 400;
+     line-height: 24px;
+     color: var(--color-gray);
+     max-width: 593px;
  }
 
  .main-text {
@@ -128,8 +170,41 @@
      max-width: 665px;
  }
 
+ @media (min-width:576px) {
+     .tpp {
+         top: -51px;
+     }
 
+ }
 
+ @media (min-width:768px) {
+     .tpp {
+         top: -49px;
+     }
+
+ }
+
+ @media (min-width:992px) {
+     .tpp {
+         top: -10px;
+     }
+          :root {
+              --fs-16: 16px;
+              --fs-44: 44px;
+              --fs-24: 24px;
+              --fs-91: 91px;
+              --fs-24: 24px;
+              --fs-40: 40px;
+              --fs-14: 14px;
+              /* ----color--- */
+              --color-gray: #4D4D4D;
+              --color-black: #000000;
+              --color-blue: #6F69F2;
+              --color-white: #ffffff;
+              --color-gray-lite: #F4F3FC;
+          }
+
+ }
 
  @media (max-width: 991.9px) {
      .mobile_view {
@@ -213,6 +288,10 @@
  @media (min-width:1200px) {
      .container {
          max-width: 1140px !important;
+     }
+
+     .tpp {
+         top: 31px;
      }
 
  }

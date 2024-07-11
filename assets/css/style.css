@@ -12,12 +12,12 @@
  }
 
  :root {
-     --fs-16: 16px;
+     --fs-16: 10px;
      --fs-44: 42px;
-     --fs-24: 24px;
+     --fs-24: 18px;
      --fs-91: 91px;
      --fs-24: 24px;
-     --fs-40: 40px;
+     --fs-40: 24px;
      --fs-14: 14px;
      /* ----color--- */
      --color-gray: #4D4D4D;
@@ -31,6 +31,10 @@
      font-family: 'Graphik Trial', sans-serif;
  }
 
+ .bg-gray {
+     background-color: var(--color-gray-lite);
+ }
+
  .sign-upbtn {
      font-size: var(--fs-16);
      font-weight: 600;
@@ -42,6 +46,67 @@
      color: var(--color-white);
      border: none;
      transition: all linear 0.3s;
+ }
+
+ .footer-pera {
+     font-size: var(--fs-14);
+     font-weight: 400;
+     line-height: 21px;
+     color: var(--color-gray);
+     margin-top: 27px !important;
+ }
+
+ .shadoww {
+     /* box-shadow: 2px 2px 2px 2px gray; */
+     width: 24px;
+     height: 24px;
+     /* padding: 6.8px 5.5px 6.8px 5.5px; */
+     background: rgba(222, 221, 237, 1);
+     justify-content: center;
+     display: flex;
+     align-items: center;
+     border-radius: 24px;
+ }
+
+ .f-heading {
+     font-size: var(--fs-16);
+     font-weight: 600;
+     line-height: 24px;
+     color: var(--color-black);
+ }
+
+ .pt-100 {
+     padding-top: 100px;
+ }
+
+ .bott {
+     bottom: 107%;
+     transform: translate(75px, 167px);
+ }
+
+
+ .f-links {
+     font-size: var(--fs-14);
+     font-weight: 400;
+     line-height: 21px;
+     color: var(--color-gray);
+
+ }
+
+ .mt-60 {
+     margin-top: 60px;
+ }
+
+ .pt-40 {
+     padding-top: 40px;
+ }
+
+ .mt-100 {
+     margin-top: 100px;
+ }
+
+ .top-114 {
+     top: -114%;
  }
 
  .sign-upbtn:hover {
@@ -170,6 +235,78 @@
      max-width: 665px;
  }
 
+ .ready-pera {
+     font-size: var(--fs-24);
+     font-weight: 600;
+     line-height: 40px;
+     text-align: center;
+     color: var(--color-white);
+
+ }
+
+ .ready-pera2 {
+     font-size: var(--fs-40);
+     font-weight: 600;
+     line-height: 45px;
+     text-align: center;
+     color: var(--color-white);
+     max-width: 808px;
+ }
+
+ .split-section {
+     height: 100vh;
+     /* Full viewport height */
+     background: linear-gradient(to bottom, white 50%, #F4F3FC 50%);
+ }
+
+ .blue-box {
+     background: linear-gradient(133.83deg, #00B9FF 3.77%, #6F69F2 81.07%);
+     max-width: 1140px;
+     min-width: 318px;
+     border-radius: 32px;
+     border: 4px solid white;
+     padding: 25px;
+ }
+
+ .percent {
+     font-size: var(--fs-16);
+     font-weight: 400;
+     line-height: 24px;
+     text-align: center;
+     color: var(--color-white);
+     max-width: 259px;
+ }
+
+
+
+ .start-btn {
+     font-size: var(--fs-16);
+     font-weight: 600;
+     line-height: 24px;
+     text-align: center;
+     color: var(--color-white);
+     width: 204px;
+     height: 56px;
+     border-radius: 57px;
+     border: 2px solid white;
+     background: linear-gradient(102.79deg, #00C2CB 2.64%, #01BAFF 98.35%);
+     ;
+ }
+ .fsection{
+    border-top: 2px solid rgba(111, 105, 242, 0.1);
+    margin-top: 30px;
+    padding: 20px;
+    
+ }
+ .footer-heading{
+        font-size: var(--fs-14);
+        font-weight: 400;
+        line-height: 21px;
+        color: var(--color-gray);
+        margin-bottom: 22px;
+        margin-top: 23px;
+ }
+
  @media (min-width:576px) {
      .tpp {
          top: -51px;
@@ -188,21 +325,22 @@
      .tpp {
          top: -10px;
      }
-          :root {
-              --fs-16: 16px;
-              --fs-44: 44px;
-              --fs-24: 24px;
-              --fs-91: 91px;
-              --fs-24: 24px;
-              --fs-40: 40px;
-              --fs-14: 14px;
-              /* ----color--- */
-              --color-gray: #4D4D4D;
-              --color-black: #000000;
-              --color-blue: #6F69F2;
-              --color-white: #ffffff;
-              --color-gray-lite: #F4F3FC;
-          }
+
+     :root {
+         --fs-16: 16px;
+         --fs-44: 44px;
+         --fs-24: 24px;
+         --fs-91: 91px;
+         --fs-24: 24px;
+         --fs-40: 40px;
+         --fs-14: 14px;
+         /* ----color--- */
+         --color-gray: #4D4D4D;
+         --color-black: #000000;
+         --color-blue: #6F69F2;
+         --color-white: #ffffff;
+         --color-gray-lite: #F4F3FC;
+     }
 
  }
 
@@ -217,8 +355,8 @@
          align-items: center;
          justify-content: center;
          transition: all 400ms linear;
-         /* backdrop-filter: blur(90px); */
-         background: linear-gradient(to right, #ff7e5f, #feb47b, #86a8e7);
+         /* background: linear-gradient(133.83deg, #00B9FF 3.77%, #6F69F2 81.07%); */
+         background-color: white;
          z-index: 4;
      }
 

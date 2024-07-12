@@ -260,9 +260,56 @@
  .main-text {
      font-size: var(--fs-44);
      font-weight: 900;
-     line-height:44px;
+     line-height: 44px;
      color: var(--color-black);
      max-width: 665px;
+ }
+
+ .p-11 {
+     padding: 11px;
+ }
+
+ /* ========scroll to top==== */
+ #scrollToTopBtn {
+     display: none;
+     /* Hidden by default */
+     position: fixed;
+     /* Fixed/sticky position */
+     bottom: 20px;
+     /* Place the button at the bottom of the page */
+     right: 30px;
+     /* Place the button 30px from the right */
+     z-index: 99;
+     border: none;
+     outline: none;
+     background: linear-gradient(133.83deg, #00B9FF 3.77%, #6F69F2 81.07%);
+     cursor: pointer;
+     border-radius: 50%;
+     animation: bounce 2s infinite;
+    position: fixed;
+ }
+
+ #scrollToTopBtn:hover {
+     box-shadow: 0 0 2px 2px white;
+ }
+
+ @keyframes bounce {
+
+     0%,
+     20%,
+     50%,
+     80%,
+     100% {
+         transform: translateY(0);
+     }
+
+     40% {
+         transform: translateY(-20px);
+     }
+
+     60% {
+         transform: translateY(-10px);
+     }
  }
 
  .ready-pera {
@@ -378,13 +425,14 @@
          --color-white: #ffffff;
          --color-gray-lite: #F4F3FC;
      }
-          .main-text {
-              font-size: var(--fs-44);
-              font-weight: 900;
-              line-height: 56.32px;
-              color: var(--color-black);
-              max-width: 665px;
-          }
+
+     .main-text {
+         font-size: var(--fs-44);
+         font-weight: 900;
+         line-height: 56.32px;
+         color: var(--color-black);
+         max-width: 665px;
+     }
 
  }
 

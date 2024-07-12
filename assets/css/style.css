@@ -26,9 +26,15 @@
      --color-white: #ffffff;
      --color-gray-lite: #F4F3FC;
  }
-.w-lg-50{
-    width: 50%;
-}
+
+ .w-lg-50 {
+     width: 50%;
+ }
+
+ .mt-160 {
+     margin-top: 160px;
+ }
+
  .font-Graphik {
      font-family: 'Graphik Trial', sans-serif;
  }
@@ -209,6 +215,10 @@
      --webkit-background-clip: text;
      background: linear-gradient(101.64deg, #00B9FF 7.34%, #6F69F2 44.47%, #10B6D0 73.06%);
      background-clip: text;
+     transition: all linear 0.8s;
+ }
+ .view-link:hover{
+    transform: scale(0.8);
  }
 
  .discover {
